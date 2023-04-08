@@ -26,18 +26,18 @@ body{
 .login{
     width: 400px;
     height: 500px;
-    background-color: wheat;
+    background-color: white;
     color:black;
     box-sizing: border-box;
     padding: 30px 40px;
     border-radius: 10px;
-    animation-name: border;
+    animation-name: border1;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes border{
+@keyframes border1{
     0%{
         border-radius: 0%;
     }
@@ -108,3 +108,76 @@ body{
 .login a:hover{
     color: black;  
 }
+
+.login-nt{
+    width: 400px;
+    height: 500px;
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+    animation-name: border2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border2 {
+    0%{
+        border-radius: 0%;
+    }
+    100%{
+        border-top-right-radius: 18%;
+        border-bottom-right-radius: 18%;
+    }
+}
+
+.login-nt .title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 15px;
+}
+
+.login-nt button{
+    width: 100%;
+    margin: 20px ;
+    position: relative;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+}
+
+.login-nt button i{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.login-nt .email{
+    background-color: #db4a49;
+    color: white;
+    font-size: 18px;
+}
+
+.login-nt .fb{
+    background-color: #3b5999;
+    color: white;
+    font-size: 18px;
+}
+
+.login-nt .tw{
+    background-color: #00acee;
+    color: white;
+    font-size: 18px;
+}
+
+.login-nt .ig {
+    background-image: linear-gradient(to bottom right, #F58529, #ED4956, #8134AF, #2E3D4F);
+    font-size: 18px;
+    color: white;
+}
+
